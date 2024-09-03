@@ -1,0 +1,76 @@
+<mvc:View
+    controllerName="salesorderupdate.controller.S1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+        titleAlignment="Center"
+    >
+        <content>
+            <VBox  alignItems = "Center" class="sapUiMediumMarginEnd">
+                <HBox>
+                    <!-- <Label text="{i18n>customerId}" /> -->
+                    <Input
+                        id="custId"
+                        placeholder="Enter Customer ID"
+                    />
+                    <!-- <Label text="{i18n>salesOrderNum}" /> -->
+                    <Input
+                        id="salesOrderInput"
+                        placeholder="Enter Order Number"
+                    />
+                </HBox>
+                
+
+                <HBox>
+                    <Input
+                        id="addLine1"
+                        placeholder="Address Line 1"
+                    />
+                    <Input
+                        id="addLine2"
+                        placeholder="Address Line 2"
+                    />
+                </HBox>
+
+                <HBox>
+                    <Input
+                        id="city"
+                        placeholder="City"
+                    />
+                    <Input
+                        id="state"
+                        placeholder="State"
+                    />
+                    <Input
+                        id="zipCode"
+                        placeholder="ZipCode"
+                    />
+                </HBox>
+                <HBox>
+                    <Input
+                        id="country"
+                        placeholder="Country"
+                    />
+
+                </HBox>
+
+
+            </VBox>
+        </content>
+        <footer>
+            <Bar>
+                <contentRight>
+                    <Button
+                        type="Emphasized"
+                        text="Submit"
+                        press="onPress"
+                    />
+                </contentRight>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
